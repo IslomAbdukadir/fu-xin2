@@ -29066,8 +29066,6 @@ body {
   position: absolute;
   border-radius: 50%;
   opacity: 1;
-  -opacity-transition: transform 0.5s;
-  -0.5s-transition: transform 0.5s;
   transition: transform 0.5s;
   -moz-transform: scale(1);
   -webkit-transform: scale(1);
@@ -29131,6 +29129,12 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 4rem;
+}
+
+@media (max-width:480px) {
+  .feature-round {
+    margin-bottom: 90px;
+  }
 }
 .feature-round:hover .feature-round__icon {
   box-shadow: 0 0 0 4px rgb(0, 86, 134, 0.12);
